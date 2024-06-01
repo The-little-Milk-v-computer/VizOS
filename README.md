@@ -18,6 +18,6 @@
 
 然后,执行chmod +x network-init.sh && ./network-init.sh
 
-一般会成功启动网络，你可以试试ping一下百度或者github等网站，一般能ping通就可以使用网络了。
+一般会成功启动网络，你可以试试ping一下百度或者github等网站，一般能ping通就可以使用网络了。后续也可以使用ssh远程链接duo.
 
 ## 你也可以直接运行root目录下的脚本初始化网络!!!

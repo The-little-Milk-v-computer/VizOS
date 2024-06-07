@@ -1,6 +1,6 @@
 # *VizOS is an open-source IP Camera OS based on OpenWrt*
 
-如果是duo256m的开发板,你需要在烧录好以后，打开sd卡，进入boot目录，将你的可用的boot.sd和fip.bin替换掉原本的bootloader。之后，插卡启动即可。(不好意思，暂时还不会改uboot，只会抄😅)
+如果是duo256m的开发板,你需要在烧录好以后，打开sd卡，进入boot目录，将你的可用的boot.sd和fip.bin替换掉原本的bootloader。之后，插卡启动即可。(不好意思，暂时还不会改uboot，只会抄作业😅)
 
 ## 在进入系统后，如没有网络，你需要修改文件network-init.sh
 ### 1. 执行vi /etc/network-init.sh
@@ -22,4 +22,4 @@
 
 ## 你也可以直接运行root目录下的脚本初始化网络!!!
 
-# 要打开luci,需要在目录istoreos/package/feeds/luci/rpcd-mod-rrdns/CMakeList.txt中将resolv相关参数配置删除即可通过编译。但仍需注意，浏览器输入luci后台地址后会一直转圈，无法进入luci界面。初步抓包发现浏览器不能下载/www中的背景图片，多次尝试均为404Error，只有第一次烧录后用手机登录加载了初始界面，后续再次尝试甚至重新烧录镜像均加载失败。暂不知原因，待排查。micropython-nossl可用.
+要打开luci,需要在目录istoreos/package/feeds/luci/rpcd-mod-rrdns/CMakeList.txt中将resolv相关参数配置删除即可通过编译。但仍需注意，浏览器输入luci后台地址后会一直转圈，无法进入luci界面。初步抓包发现浏览器不能下载/www中的背景图片，多次尝试均为404Error，只有第一次烧录后用手机登录加载了初始界面，后续再次尝试甚至重新烧录镜像均加载失败。我很菜，暂不知原因，待排查。micropython-nossl可用.

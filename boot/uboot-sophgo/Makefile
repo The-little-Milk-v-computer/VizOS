@@ -73,12 +73,23 @@ define U-Boot/milkvduo256m
 		CHIP_SEGMENT=cv181x
 endef
 
+define U-Boot/milkvduos
+	NAME:=Sophgo milk-v duos
+	UBOOT_DTS:=cv1813h_milkv_duos_sd.dtb
+	BUILD_DEVICES:=cvitek_cv1813h_milkv_duos_sd
+	UBOOT_MAKE_FLAGS := \
+		CHIP=cv1813h \
+		CVIBOARD=milkv_duos_sd \
+		BOARD=cv181x \
+		CHIP_SEGMENT=cv181x
+endef
+
 
 UBOOT_TARGETS := \
 	huashanpi \
 	milkvduo \
-	milkvduo256m
-
+	milkvduo256m \
+	milkvduos
 
 
 

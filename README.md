@@ -22,4 +22,5 @@
 
 ## 你也可以直接运行root目录下的脚本初始化网络!!!
 
-要打开luci,需要在目录istoreos/package/feeds/luci/rpcd-mod-rrdns/CMakeList.txt中将resolv相关参数配置删除即可通过编译。但仍需注意，浏览器输入luci后台地址后会一直转圈，无法进入luci界面。初步抓包发现浏览器不能下载/www中的背景图片，多次尝试均为404Error，只有第一次烧录后用手机登录加载了初始界面，后续再次尝试甚至重新烧录镜像均加载失败。我很菜，暂不知原因，待排查。micropython-nossl可用.
+若要打开luci,需要在目录istoreos/package/feeds/luci/rpcd-mod-rrdns/CMakeList.txt中将resolv相关参数配置删除即可通过编译。但仍需注意，浏览器输入luci后台地址后会一直转圈，无法进入luci界面。初步抓包发现浏览器不能下载/www中的背景图片，多次尝试均为404Error，只有第一次烧录后用手机登录加载了初始界面，后续再次尝试甚至重新烧录镜像均加载失败。解决方法二，尝试去duo-buildroot-sdk中寻找已经编译好的resolv.a库文件复制到istoreos/staging_dir/target-riscv64-unknown-linux-musl_musl/usr/lib中可以解决缺少resolv依赖报错.
+我很菜，暂不知原因，待排查。micropython-nossl可用.

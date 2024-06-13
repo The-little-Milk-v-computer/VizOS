@@ -38,4 +38,7 @@ esac
 chmod +x /etc/network-init.sh
 . /etc/network-init.sh
 
+opkg update
+echo "THE OPKG UPDATE FINISH!"
+
 echo "The network setup OK!"

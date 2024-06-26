@@ -38,7 +38,14 @@ esac
 chmod +x /etc/network-init.sh
 . /etc/network-init.sh
 
+sed -i 's/mirrors.tuna.tsinghua.edu.cn/dl-cdn.alpinelinux.org/g' /etc/apk/repositories
+apk add -X https://mirrors.tuna.tsinghua.edu.cn/alpine/latest-stable/main -u alpine-keys  --allow-untrusted
+
 opkg update
-echo "THE OPKG UPDATE FINISH!"
+apk update
+echo 'Installing the necessary packages...'
+apk add musl busybox busybox-binsh apk-tools
+
+echo "THE opkg AND apk application-manage-app UPDATE FINISH!"
 
 echo "The network setup OK!"

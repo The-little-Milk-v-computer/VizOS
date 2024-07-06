@@ -8,7 +8,7 @@ case "$answer" in
 "y"|\
 "Y")
 
-echo "请输入您定义的设备静态ip地址:"
+echo "请输入您自定义的设备静态ip地址(Please enter the static IP address you defined for the duo-board):"
 read ipaddr
 
 if [ -z "$ipaddr" ]; then
@@ -19,7 +19,7 @@ else
     echo 'ipaddress is 192.168.1.129'
 fi
 
-echo "请输入您路由器或网关的ip地址:"
+echo "请输入您路由器或网关的ip地址(Please enter the IP address of your router or gateway):"
 read gwaddr
 
 if [ -z "$ipaddr" ]; then

@@ -6,15 +6,15 @@
 ### 1. 执行vi /etc/network-init.sh
 
     将文件内部以192.168开头的两个地址进行修改，以下为具体修改过程:
-
+```
     ifconfig eth0 192.168.1.129 up # 修改为自己的开发板网口ip地址
     route add default gw 192.168.1.1 # 修改为开发板网线链接的路由器或者网关的lan口ip地址
-
+```
 ### 2. 或者执行以下命令:
-
+```
     sed -i 's/192.168.1.129/你想给开发板设置的ip地址/g' /etc/network-init.sh
     sed -i 's/192.168.1.1/你的路由器ip地址/g' /etc/network-init.sh
-    
+```
 
 然后,执行chmod +x network-init.sh && ./network-init.sh
 
@@ -22,4 +22,8 @@
 
 ### 你也可以直接运行root目录下的脚本初始化网络
 
+If you are not within China, you can use official-image-site:
+```
+sed -i 's/mirrors.tuna.tsinghua.edu.cn/dl-cdn.alpinelinux.org/g' /etc/apk/repositories
+```
 luci不可用

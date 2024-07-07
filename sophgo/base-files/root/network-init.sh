@@ -49,3 +49,15 @@ apk add musl busybox busybox-binsh apk-tools
 echo "THE opkg AND apk application-manage-app UPDATE FINISH!"
 
 echo "The network setup OK!"
+
+##
+##  kmod setting
+##
+target_dir='/lib/modules/5.10.4-tag-'
+if [ -d target_dir]; then
+    echo "Welcome to use Duo64m Openwrt."
+else
+    ln -s /lib/modules/5.10.4 /lib/modules/$(uname -r)
+    kmodloader
+    echo "Welcome to use Duo Openwrt."
+fi

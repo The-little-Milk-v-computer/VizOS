@@ -26,4 +26,7 @@ If you are not within China, you can use official-image-site:
 ```
 sed -i 's/mirrors.tuna.tsinghua.edu.cn/dl-cdn.alpinelinux.org/g' /etc/apk/repositories
 ```
-luci不可用
+luci可用,请您手动安装.
+```
+opkg install luci
+```

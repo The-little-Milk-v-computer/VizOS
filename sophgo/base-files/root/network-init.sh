@@ -48,6 +48,9 @@ apk add musl busybox busybox-binsh apk-tools
 
 echo "THE opkg AND apk application-manage-app UPDATE FINISH!"
 
+# 安装luci,可注释
+# opkg install luci
+
 echo "The network setup OK!"
 
 ##

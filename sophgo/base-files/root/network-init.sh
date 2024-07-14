@@ -38,6 +38,7 @@ esac
 chmod +x /etc/network-init.sh
 . /etc/network-init.sh
 
+sleep 5
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 apk add -X https://mirrors.tuna.tsinghua.edu.cn/alpine/latest-stable/main -u alpine-keys  --allow-untrusted
 

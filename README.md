@@ -31,3 +31,5 @@ luci可用,请您手动安装.
 ```
 opkg install luci
 ```
+
+参考文献:https://blog.csdn.net/qq_39858654/article/details/135777769?spm=1001.2014.3001.5501

@@ -16,3 +16,8 @@
 2024.7.14
     增加base-files差异化配置,base-files中的许多库未移植完成,还不能用.(网上看到有buildroot移植opkg
     成功的,不知duo能否移植)
+
+2024.8.13
+    duo的buildroot可以移植opkg等包管理器,可以安装使用小部分在线包.
+    duos的uboot暂不能使用,有些许问题待解决.同样的问题也出现在duoarm上.duoarm的问题也是uboot无法启动镜
+    像.待修复以后就可以使用了.待后面有时间再修复此问题.

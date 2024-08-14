@@ -1,7 +1,7 @@
 ## *VizOS is an open-source IP Camera OS based on OpenWrt*
 #### istoreos仓库现已添加build.sh脚本，您可以直接使用该脚本编译Duo-openwrt.
 
-如果是duo256m的开发板,你需要在烧录好以后，打开sd卡，进入boot目录，将你的可用的boot.sd和fip.bin替换掉原本的bootloader。之后，插卡启动即可。(不好意思，暂时还不会改uboot，只会抄作业😅)
+注意:如果是duo256m的开发板,你需要在烧录好以后，打开sd卡，进入boot目录，将你的可用的boot.sd和fip.bin替换掉原本的uboot，插卡启动即可。(您也可直接拉源码编译不用替换uboot了，uboot现已修复，虽然还有小问题😅)
 
 ## 在进入系统后，如没有网络，你需要修改文件network-init.sh
 ### 1. 执行vi /etc/network-init.sh

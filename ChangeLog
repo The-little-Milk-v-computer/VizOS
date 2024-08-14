@@ -21,3 +21,8 @@
     duo的buildroot可以移植opkg等包管理器,可以安装使用小部分在线包.
     duos的uboot暂不能使用,有些许问题待解决.同样的问题也出现在duoarm上.duoarm的问题也是uboot无法启动镜
     像.待修复以后就可以使用了.待后面有时间再修复此问题.
+
+2024.8.14
+    milkv-duo相关更新: 无
+    milkv-duo256m和milkv-duos相关更新: 修复uboot-sophgo无法引导kernel的问题, 更新uboot仓库地址.😋
+    待修复问题: 启动后用户名显示为none, 可能是我的sd卡的问题? 希望有大佬帮忙测试一下.😅

@@ -60,7 +60,7 @@ CONFIG_TARGET_BOARD="sophgo"
 CONFIG_TARGET_SUBTARGET="cv181x"
 CONFIG_TARGET_PROFILE="DEVICE_milk-v-duo256m"
 CONFIG_TARGET_ARCH_PACKAGES="riscv64_riscv64"
-CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mabi=lp64d -march=rv64gcxthead"
+CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mabi=lp64d -march=rv64imafdcv0p7xthead -mcpu=c906fdv -mcmodel=medany"
 CONFIG_CPU_TYPE="riscv64"
 CONFIG_LINUX_5_15=y
 CONFIG_DEFAULT_base-files=y

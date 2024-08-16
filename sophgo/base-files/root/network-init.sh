@@ -55,13 +55,13 @@ echo "THE opkg AND apk application-manage-app UPDATE FINISH!"
 echo "The network setup OK!"
 
 ##
-##  kmod setting
+##  kmod setting # 已解决此问题,故弃用
 ##
-target_dir='/lib/modules/5.10.4-tag-'
-if [ -d target_dir ]; then
-    echo "Welcome to use Duo64m Openwrt."
-else
-    ln -s /lib/modules/5.10.4 /lib/modules/$(uname -r)
-    kmodloader
-    echo "Welcome to use Duo Openwrt."
-fi
+# target_dir='/lib/modules/5.10.4-tag-'
+# if [ -d target_dir ]; then
+#    echo "Welcome to use Duo64m Openwrt."
+# else
+#    ln -s /lib/modules/5.10.4 /lib/modules/$(uname -r)
+#    kmodloader
+#    echo "Welcome to use Duo Openwrt."
+# fi

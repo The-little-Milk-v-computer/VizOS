@@ -3,7 +3,11 @@
 # 请按照自己的上级路由设置该文件，并运行
 #
 
-ifconfig eth0 192.168.1.129 up
+if ifconfig br-lan > /dev/null 2>&1; then
+    ifconfig br-lan 192.168.1.129 up
+else
+    ifconfig eth0 192.168.1.129 up
+fi
 
 route add default gw 192.168.1.1
 

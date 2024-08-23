@@ -31,3 +31,7 @@
     milkv-duo相关更新: 无
     milkv-duo256m和milkv-duos相关更新: 修复 openwrt 无法读写问题和用户名显示异常问题。目前milkv-duo
     全系列可用😋。直接编译烧录至sd卡即可使用,无需替换bootloader和kernel。哈哈😄
+
+2024.8.23
+    lsusb等命令需要联网更新busybox后才可使用。
+    

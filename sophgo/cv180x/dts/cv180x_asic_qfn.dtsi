@@ -6,9 +6,9 @@
 	snsr-reset = <&portc 13 GPIO_ACTIVE_LOW>, <&portc 13 GPIO_ACTIVE_LOW>, <&portc 13 GPIO_ACTIVE_LOW>;
 };
 
-&dac{
-	mute-gpio-r = <&porte 2 GPIO_ACTIVE_LOW>;
-};
+//&dac{
+//	mute-gpio-r = <&porte 2 GPIO_ACTIVE_LOW>;
+//};
 
 &spi0 {
 	status = "disabled";

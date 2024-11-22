@@ -6,11 +6,11 @@
 	snsr-reset = <&portc 13 GPIO_ACTIVE_LOW>, <&portc 13 GPIO_ACTIVE_LOW>, <&portc 13 GPIO_ACTIVE_LOW>;
 };
 
-&mipi_tx {
-	reset-gpio = <&porta 15 GPIO_ACTIVE_LOW>;
-	pwm-gpio = <&porta 18 GPIO_ACTIVE_HIGH>;
-	power-ct-gpio = <&porta 19 GPIO_ACTIVE_HIGH>;
-};
+//&mipi_tx {
+//	reset-gpio = <&porta 15 GPIO_ACTIVE_LOW>;
+//	pwm-gpio = <&porta 18 GPIO_ACTIVE_HIGH>;
+//	power-ct-gpio = <&porta 19 GPIO_ACTIVE_HIGH>;
+//};
 
 &dac{
 	mute-gpio-r = <&porte 1 GPIO_ACTIVE_LOW>;
